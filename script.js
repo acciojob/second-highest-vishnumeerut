@@ -2,8 +2,12 @@
 function secondHighest(arr) {
 			//Write your code here
 			arr.sort((a, b) => b-a);
-			console.log(arr[1]);
-			return arr[1]
+			// console.log(arr[1]);
+			let result = arr[1];
+			if(result === undefined){
+				return -Infinity;
+			}
+			return result;
 		}
 
 		function Main() {
