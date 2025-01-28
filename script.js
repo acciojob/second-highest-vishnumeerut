@@ -4,7 +4,7 @@ function secondHighest(arr) {
 			arr.sort((a, b) => b-a);
 			// console.log(arr[1]);
 			let result = arr[1];
-			if(result === undefined){
+			if(result === undefined && result == 1){
 				return -Infinity;
 			}
 			return result;
@@ -19,4 +19,4 @@ function secondHighest(arr) {
 			alert(secondHighest(arr));
 		}
 
-Main()
+Main()  
