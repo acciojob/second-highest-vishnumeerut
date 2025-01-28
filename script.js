@@ -1,13 +1,15 @@
 //your JS code here. If required.
 function secondHighest(arr) {
 			//Write your code here
-			arr.sort((a, b) => b-a);
-			// console.log(arr[1]);
-			let result = arr[1];
-			if(result === undefined){
-				return -Infinity;
+			let secondLargest = -Infinity;
+			let largest = -Infinity;
+			for(let let  i = 0; i < arr.length; i++) {
+				if(arr[i] > largest) {
+					secondLargest = largest;
+					largest = arr[i];
+				}
 			}
-			return result;
+			return secondLargest;
 		}
 
 		function Main() {
@@ -19,4 +21,4 @@ function secondHighest(arr) {
 			alert(secondHighest(arr));
 		}
 
-Main()  
+Main()    
